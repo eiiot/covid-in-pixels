@@ -4,11 +4,11 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <meta name="title" content="COVID in pixels" />
-        <title>COVID in pixels</title>
+        <meta name="title" content="COVID in Pixels" />
+        <title>COVID in Pixels</title>
         <meta
           name="description"
-          content="every pixel is a life. view covid-19's impact on the world."
+          content="Every pixel is a life. View COVID-19's impact on the world."
         />
         <meta name="keywords" content="covid,covid-19,pixel,data,visualized" />
         <meta name="robots" content="index, follow" />
