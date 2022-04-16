@@ -55,6 +55,7 @@ const Counter = (props: CounterProps) => {
   return (
     <div
       className="fixed w-full text-center text-lg transition-opacity duration-300 md:left-0 md:mx-4 md:w-auto md:translate-x-0"
+      style={{ opacity: 0 }}
       ref={counterRef}
     >
       {count}
