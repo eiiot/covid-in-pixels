@@ -21,7 +21,10 @@ export default function Document() {
           property="og:description"
           content="Every pixel is a life. View COVID-19's impact on the world."
         />
-        <meta property="og:image" content="/assets/images/meta.png" />
+        <meta
+          property="og:image"
+          content="https://covid-in-pixels.eliothertenstein.com/assets/images/meta.png"
+        />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta
@@ -33,7 +36,10 @@ export default function Document() {
           property="twitter:description"
           content="Every pixel is a life. View COVID-19's impact on the world."
         />
-        <meta property="twitter:image" content="/assets/images/meta.png" />
+        <meta
+          property="twitter:image"
+          content="https://covid-in-pixels.eliothertenstein.com/assets/images/meta.png"
+        />
 
         <meta name="keywords" content="covid,covid-19,pixel,data,visualized" />
         <meta name="robots" content="index, follow" />
@@ -43,12 +49,12 @@ export default function Document() {
         <link
           rel="icon"
           type="image/svg+xml"
-          href="/assets/images/favicon.svg"
+          href="https://covid-in-pixels.eliothertenstein.com/assets/images/favicon.svg"
         />
         <link
           rel="icon"
           type="image/png"
-          href="/assets/images/favicon.png"
+          href="https://covid-in-pixels.eliothertenstein.com/assets/images/favicon.png"
         ></link>
       </Head>
       <body className="bg-black">
