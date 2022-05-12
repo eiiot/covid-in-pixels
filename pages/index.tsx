@@ -57,7 +57,7 @@ const Home: NextPage = () => {
 
       <section className="flex h-max w-screen flex-col items-center justify-center">
         <span className="mx-3 text-center">
-          Here's how many lives COVID-19 has taken in total
+          This is how many lives COVID-19 has taken in total
         </span>
         {covidDeaths ? (
           <svg
