@@ -39,22 +39,22 @@ const Counter = (props: CounterProps) => {
         scrollOffset > fixedYVal + 24 &&
         scrollOffset < fixedYVal + svgHeight
       ) {
-        counterRef.current.style.bottom = '12px' // if the grid is in the viewport, display the counter
-        counterRef.current.style.opacity = '100%'
+        // counterRef.current.style.bottom = '12px' // if the grid is in the viewport, display the counter
+        counterRef.current.style.opacity = '1'
       } else if (scrollOffset - fixedYVal < fixedYVal) {
         setCount('0')
-        counterRef.current.style.opacity = '0%'
+        counterRef.current.style.opacity = '0'
       } else {
         setCount((Math.round(covidDeaths / 100) * 100).toLocaleString('en-US'))
-        counterRef.current.style.bottom =
-          scrollOffset - (fixedYVal + svgHeight) + 'px'
+        // counterRef.current.style.bottom =
+          // (fixedYVal + svgHeight) + 'px'
       }
     }
   }, [scrollOffset, covidDeaths])
 
   return (
     <div
-      className="fixed w-full text-center text-lg transition-opacity duration-300 md:left-0 md:mx-4 md:w-auto md:translate-x-0"
+      className="sticky text-center w-full text-lg transition-opacity duration-300 top-4 md:px-4 md:text-left md:translate-x-0"
       style={{ opacity: 0 }}
       ref={counterRef}
     >

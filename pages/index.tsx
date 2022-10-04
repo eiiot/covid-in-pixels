@@ -17,16 +17,15 @@ const Home: NextPage = () => {
 
   return (
     <div className="h-max-content  text-white">
-      <Counter covidDeaths={covidDeaths} gridRef={gridRef} />
       <section className="flex h-screen w-screen flex-col items-center justify-center">
-        <span className="mx-3 text-center">
+        <span className="mx-4 text-center">
           In 2019, SARS-CoV-2 started to spread rapidly across the world,
           beginning a global pandemic.
         </span>
       </section>
       <section className="flex h-screen w-screen flex-col items-center justify-center">
         {/* A SVG with one pixel filled in white */}
-        <span className="mx-3 text-center">
+        <span className="mx-4 text-center">
           This pixel represents one person who passed away from COVID-19
         </span>
         <svg className="my-3 h-[1px] w-[1px]">
@@ -34,9 +33,8 @@ const Home: NextPage = () => {
         </svg>
       </section>
       <section className="mb-[50vh] flex h-screen w-screen flex-col items-center justify-center">
-        <span className="mx-3 my-2 text-center">
-          This grid represents 100 people, all who passed away from the COVID-19
-          Virus
+        <span className="mx-4 my-2 text-center">
+          This grid represents 100 people, all who passed away from COVID-19
         </span>
         <svg width="39" height="39">
           <defs>
@@ -56,16 +54,18 @@ const Home: NextPage = () => {
       </section>
 
       <section className="flex h-max w-screen flex-col items-center justify-center">
-        <span className="mx-3 text-center">
-          This is how many lives COVID-19 has taken in total
+        <span className="mx-4 text-center">
+          This is how many lives COVID-19 has taken in total:
         </span>
+        <Counter covidDeaths={covidDeaths} gridRef={gridRef} />
+
         {covidDeaths ? (
           <svg
             // width="399"
             height={
-              (covidDeaths / (window.innerWidth > 399 ? 100 : 50)) * 4 - 1
+              (covidDeaths / (window.innerWidth > 399 ? 100 : 75)) * 4 - 1
             }
-            className="my-3 w-[199px] md:w-[399px]"
+            className="mt-3 w-[299px] md:w-[399px]"
             ref={gridRef}
           >
             <defs>
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
             <rect
               x="1"
               y="1"
-              className="w-[199px] md:w-[399px]"
+              className="w-[299px] md:w-[399px]"
               height="100%"
               fill="url(#secondPattern)"
             />
@@ -92,7 +92,7 @@ const Home: NextPage = () => {
       </section>
 
       <section className="flex h-screen w-screen flex-col items-center justify-center">
-        <span className="mx-3 text-center">
+        <span className="mx-4 text-center">
           Don't become another pixel.{' '}
           <a href="https://www.vaccines.gov" className="underline">
             Get vaccinated
@@ -109,11 +109,10 @@ const Home: NextPage = () => {
           <span className="text-center">
             Created by{' '}
             <a
-              href="https://twitter.com/eiioth"
-              target="_blank"
+              href="https://eliothertenstein.com"
               className="underline"
             >
-              @eiioth
+              Eliot Hertenstein
             </a>
           </span>
           <span className="text-center">
