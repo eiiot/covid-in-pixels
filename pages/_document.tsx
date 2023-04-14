@@ -56,6 +56,11 @@ export default function Document() {
           type="image/png"
           href="https://covid-in-pixels.eliothertenstein.com/assets/images/favicon.png"
         ></link>
+        <script
+          defer
+          data-domain="covid-in-pixels.eliothertenstein.com"
+          src="https://analytics.eliothertenstein.com/js/plausible.js"
+        ></script>
       </Head>
       <body className="bg-black">
         <Main />
